@@ -5,12 +5,15 @@ import AddEditBlog from './pages/AddEditBlog';
 import Blog from './pages/Blog';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/addblog" element={<AddEditBlog />} />
