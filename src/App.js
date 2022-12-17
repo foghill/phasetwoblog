@@ -7,12 +7,14 @@ import About from './pages/About';
 import NotFound from './pages/NotFound';
 import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer } from 'react-toastify';
+import Header from './components/Header';
 
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
+      <Header />
       <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
